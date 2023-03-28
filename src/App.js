@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Props from './components/Props';
 
+
+// const StyledButton = styled.button`
+//   background-color: #4CAF50; /* Green */
+//   border: none;
+//   color: white;
+//   padding: 15px 32px;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 16px;
+
+// `
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Props name="Rafi">
+        <p>this is children </p></Props>
+      <Props name="Annie" />
     </div>
+
   );
 }
 
